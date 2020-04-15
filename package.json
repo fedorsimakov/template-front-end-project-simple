@@ -1,0 +1,45 @@
+{
+  "name": "template-front-end-project-simple",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "NODE_ENV=production babel src --out-dir dist --source-maps inline",
+    "prepublishOnly": "npm run build"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fedorsimakov/template-front-end-project-simple.git"
+  },
+  "author": "fedorsimakov",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/fedorsimakov/template-front-end-project-simple/issues"
+  },
+  "homepage": "https://github.com/fedorsimakov/template-front-end-project-simple#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/node": "^7.8.7",
+    "@babel/plugin-proposal-pipeline-operator": "^7.8.3",
+    "@babel/preset-env": "^7.9.5",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^25.3.0",
+    "debug": "^4.1.1",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-babel": "^5.3.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jest": "^23.8.2",
+    "jest": "^25.3.0",
+    "jest-cli": "^25.3.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.15"
+  }
+}
